@@ -1,0 +1,21 @@
+<table style="width :50%">
+   <thead>
+      <tr>
+          <th>Fruit Name</th>
+          <th>Size</th>
+          <th>Colour</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor="let Fruit of IFruits">
+          <td>{{Fruit.fruit}}</td>
+          <td>{{Fruit.size}}</td>
+          <td>{{Fruit.color}}</td>
+      </tr>
+      <tr  *ngIf="IFruits.length==0">
+                 <td colspan="5"> No Data to Display</td>
+      </tr>
+
+   </tbody>
+
+</table>

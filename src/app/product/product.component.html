@@ -1,0 +1,10 @@
+<p>
+  product works!
+</p>
+<!-- [fragment]="'loading'" -->
+<div>
+  <a [routerLink]="['/product',5,'edit']"
+   [queryParams]="{allowEdit : '1'}" 
+   fragment="loading">
+    Click the link to chnage the URL</a>
+</div>
